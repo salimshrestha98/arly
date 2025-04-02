@@ -21,3 +21,11 @@
 - footer.php
 - functions.php
 
+### Getting the path to your theme:
+For the stylesheets and javascript to load, you need to provide complete path to the file. To get your theme path, use the following functions:
+- get_template_directory_uri()
+- bloginfo( 'template_directory' )
+
+### Separating Headers and Footers:
+- get_header() -> Calls header.php file.
+- get_footer() -> Calls footer.php file.
