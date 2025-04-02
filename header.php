@@ -38,7 +38,9 @@
 	<header class="header_section">
 		<div class="header_top">
 		<div class="container-fluid header_top_container">
-			<a class="navbar-brand " href="index.html"> Tro<span>Weld</span> </a>
+			<a class="navbar-brand " href="<?php echo esc_url( site_url() ); ?>">
+				<img src="<?php echo esc_url( get_header_image() ); ?>" width="50px" />
+			</a>
 			<div class="contact_nav">
 			<a href="">
 				<i class="fa fa-map-marker" aria-hidden="true"></i>

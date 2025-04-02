@@ -53,3 +53,15 @@ To call that specific header template, you can call get_header( '<slug>' ). It i
 - We need to enable Featured Image ( thumbnail ) option in admin page editor manually.
 - Whatever we want to bring to the admin page settings, we add to functions.php file.
 - Use add_theme_support( 'post-thumbnails' ) to add support for featured image option.
+
+### Displaying thumbnail image:
+- the_post_thumbnail([thumbnail, medium, large, full, array(custom_height, custom_width )])
+  Prints the thumbnail image on the post.
+- wp_get_attachment_image_src( get_post_thumbnail_id(), 'large')
+  Returns the complete url of the image. Useful if you want to add the <img> tag manually.
+
+### How to add Custom Header Image (Logo):
+- add_theme_support('custom-header' )
+  Enable support to choose custom header from Customizer.
+- get_header_image()
+  Returns the url. So, add an <img> tag where you want to insert brand logo and call the function in src attribute.
