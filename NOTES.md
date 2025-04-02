@@ -39,4 +39,12 @@ To call that specific header template, you can call get_header( '<slug>' ). It i
 - wp_nav_menu()
   Call menu to be displayed in frontend.
 
-### 
+### How to call default page template in WordPress:
+- page.php is the default page template.
+- index.php is the fallback template if page.php or other template are not defined.
+
+
+### Displaying Page contents:
+- the_title()
+- the_content()
+
