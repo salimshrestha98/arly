@@ -250,6 +250,11 @@ a:focus {
   color: #da7426;
 }
 
+.custom_nav-container .navbar-nav .nav-item.current-menu-item a {
+  color: #da7426;
+  border-bottom: 1px solid #da7426;
+}
+
 .custom_nav-container .nav_search-btn {
   width: 35px;
   height: 35px;

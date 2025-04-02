@@ -65,3 +65,21 @@ To call that specific header template, you can call get_header( '<slug>' ). It i
   Enable support to choose custom header from Customizer.
 - get_header_image()
   Returns the url. So, add an <img> tag where you want to insert brand logo and call the function in src attribute.
+
+### Creating Custom Page Template:
+- If we need custom design for a page different from the default page.php, we create custom page template for that page.
+- Create a php file in theme root dir and add this comment with template name.
+  /**Template Name: Template 1 */
+- Choose the template in page/post edit settings and it will be applied for that specific page/post.
+
+### Make current page menu item active:
+- WordPress adds a .current-menu-item class to the navigation menu item that is currently displayed.
+- We can use that class to style the currently active nav menu item.
+
+
+## Displaying Post List:
+- while( have_posts() ) : the_post() -> Loops for all the available posts
+- the_title() -> Prints the current loop item title
+- get_the_excerpt() -> Returns the loop item excerpt
+- the_date() -> Returns the loop item created date
+- the_post_thumbnail_url() -> Prints the loop item thumbnail url if available
