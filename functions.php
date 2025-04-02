@@ -26,3 +26,5 @@ add_filter(
 	10,
 	4
 );
+
+add_theme_support( 'post-thumbnails' );

@@ -48,3 +48,8 @@ To call that specific header template, you can call get_header( '<slug>' ). It i
 - the_title()
 - the_content()
 
+### Enabling Featured Image Support:
+- When developing theme, you should manually add theme supports and features as needed.
+- We need to enable Featured Image ( thumbnail ) option in admin page editor manually.
+- Whatever we want to bring to the admin page settings, we add to functions.php file.
+- Use add_theme_support( 'post-thumbnails' ) to add support for featured image option.
