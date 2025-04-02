@@ -29,3 +29,14 @@ For the stylesheets and javascript to load, you need to provide complete path to
 ### Separating Headers and Footers:
 - get_header() -> Calls header.php file.
 - get_footer() -> Calls footer.php file.
+
+If you have multiple header templates for different pages, you can create another file with name header-<slug>.php.
+To call that specific header template, you can call get_header( '<slug>' ). It is similar for footer.
+
+### Registering a Nav Menu in WordPress:
+- register_nav_menus()
+  You can determine how many menus you wish to display.
+- wp_nav_menu()
+  Call menu to be displayed in frontend.
+
+### 
